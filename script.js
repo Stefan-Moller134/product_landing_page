@@ -59,7 +59,12 @@ function getEmail() {
         return;
     }
 
-    var destinationEmail = "stefanmoller134@gmail.com";
+    if (!email.value.includes('@')) {
+        emailOutput.innerHTML = `<span class="invalid">Please enter a valid email address </span>`;
+        return;
+    }
+
+    var destinationEmail = "maimaicatsitter@gmail.com";
     window.location.href = `mailto:${destinationEmail}?subject=Contact&body=Message from ${email.value}`;
 
     emailOutput.innerHTML = `<span class="valid">Your email address is: ${email.value} </span>`;
