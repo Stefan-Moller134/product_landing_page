@@ -1,28 +1,20 @@
-// Total Fee Calculator
+// Fee Calculator
 const days = document.getElementById('days');
-const deposit = document.getElementById('deposit');
 const cats = document.getElementById('cats');
 const calcBtn = document.getElementById('calc-btn');
-const clearBtn = document.getElementById('clear-btn');
+const resetBtn = document.getElementById('reset-btn');
 const totalfee = document.getElementById('total-fee');
-let total = 0;
+const mailToLink = document.querySelector('[href="mailto:"]');
 
 // Prices for different number of cats
 const fees = [300, 450, 700, 1000];
 
-// Calculate total fee
-function calculate() {
+function calculateTotalFee() {
     const catCount = Number(cats.value);
-
-    let total = fees[Math.min(catCount, 4) - 1] * Number(days.value) - Number(deposit.value);
+    const total = fees[Math.min(catCount, 4) - 1] * Number(days.value);
 
     if (total < 0) {
         totalfee.innerHTML = `<span class="invalid">Deposit cannot be greater than the total fee </span>`;
-        return;
-    }
-
-    if (days.value === '' || deposit.value === '') {
-        totalfee.innerHTML = `<span class="invalid">Please fill all the fields </span>`;
         return;
     }
 
@@ -31,43 +23,19 @@ function calculate() {
         return;
     }
 
-
-    totalfee.innerHTML = `<span class="total">Your Total Is: Php <b>${total}</b> </span>`;
+    totalfee.innerHTML = `Your Total Is: Php <b>${total}</b>`;
 }
 
-calcBtn.addEventListener('click', calculate);
+calcBtn.addEventListener('click', calculateTotalFee);
 
-// Clear the form
-function clearForm() {
-    days.value = '';
-    deposit.value = '';
-    cats.value = '';
+
+function resetForm() {
+    days.value = 1;
+    cats.value = 1;
     totalfee.innerHTML = '';
 }
 
-clearBtn.addEventListener('click', clearForm);
+resetBtn.addEventListener('click', resetForm);
 
-
-// Get email adress
-const email = document.getElementById('email');
-const emailBtn = document.getElementById('email-btn');
-const emailOutput = document.getElementById('email-output');
-
-function getEmail() {
-    if (email.value === '') {
-        emailOutput.innerHTML = `<span class="invalid">Please enter your email address </span>`;
-        return;
-    }
-
-    if (!email.value.includes('@')) {
-        emailOutput.innerHTML = `<span class="invalid">Please enter a valid email address </span>`;
-        return;
-    }
-
-    var destinationEmail = "maimaicatsitter@gmail.com";
-    window.location.href = `mailto:${destinationEmail}?subject=Contact&body=Message from ${email.value}`;
-
-    emailOutput.innerHTML = `<span class="valid">Your email address is: ${email.value} </span>`;
-}
-
-emailBtn.addEventListener('click', getEmail);
+const mailto = 'stefanmoller134_gmail.com';
+mailToLink.href = 'mailto:' + mailto.replace('_', '@');

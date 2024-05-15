@@ -8,132 +8,129 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<!-- NAV START -->
-    <nav id="nav-bar">
+    <nav>
         <div class="logo">
-            <img src="img/cat-sitter-logo.jpg" id="header-img" alt="Cat sitter logo" loading="lazy">
+            <img src="img/cat-sitter-logo.jpg" alt="Cat sitter logo" loading="lazy">
         </div>
         <ul>
-            <li><a class="nav-link" href="#about-section">About</a></li>
-            <li><a class="nav-link" href="#services-section">Services</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#requirements">Requirements</a></li>
             <li><a class="nav-link" href="#pricing">Pricing</a></li>
-			<li><a class="nav-link" href="#quote">Quote</a></li>
 			<li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
-	<!-- PAGE WRAPPER START -->
-    <div id="page-wrapper">
-		<!-- ABOUT-SECTION -->
-        <section id="about-section">
-            <h1 class="title" id="about-section">Mai Cat Sitter</h1>
-            <p class="about">
-                Are you worried about leaving your beloved cat alone? With Mai Cat Sitter, rest assured your furry friend is in good hands. Mai Cat Sitter provides detailed feeding instructions tailored to your cat’s needs, ensuring they receive the purr-fect care every time. Book now and enjoy peace of mind while you’re away!” 🐾
+    
+	<section>
+		<a id="about" class="anchor"></a>
+    	<div class="content-container">
+		    <header>
+		        <h1>Mai Cat Sitter</h1>
+		    </header>
+
+            <p>
+            	Are you worried about leaving your beloved cat alone?
+            	With Mai Cat Sitter, rest assured your furry friend is in good hands.
+            	Mai Cat Sitter provides detailed feeding instructions tailored to your cat’s needs,
+            	ensuring they receive the purr-fect care every time.
+            	Book now and enjoy peace of mind while you’re away!” 🐾
             </p>
-        </section>
-		<!-- MAIN-CONTAINER START -->
-        <div class="main-container">
-			<!-- REELS -->
-            <div class="services-container top-spaced">
-                <section id="reels-section">
-                    <iframe id="video" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F941007427755223%2F&amp;show_text=false&amp;width=267&amp;t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                </section>
+
+            <!-- Video -->
+            <div class="video-container">
+            	<iframe src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Freel%2F941007427755223%2F&amp;show_text=false&amp;width=267&amp;t=0"
+            	width="267" height="476" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
-			<!-- SERVICES -->
-			<section id="services-section">
-				<div class="services-div top-spaced">
-					<h3 class="subtitle" id="services">Our Services:</h3>
-					<ul>
-						<li>Pet Boarding: Safe and comfortable care for your cat while you’re away.</li>
-						<li>Cat Sitting (Home Visit): In-home visits to check on your cat, provide food, and companionship.</li>
-						<li>Pet Taxi: Convenient transportation for your cat.</li>
-					</ul>
+
+			<!-- Services -->
+			<h3>Our Services</h3>
+			<ul>
+				<li><b>Pet Boarding:</b><span>Safe and comfortable care for your cat while you’re away.</span></li>
+				<li><b>Cat Sitting (Home Visit):</b><span>In-home visits to check on your cat, provide food, and companionship.</span></li>
+				<li><b>Pet Taxi:</b><span>Convenient transportation for your cat.</span></li>
+			</ul>
+		</div> <!-- content-container -->
+	</section> <!-- ABOUT -->
+    
+    <section>
+    	<a id="requirements" class="anchor"></a>
+    	<div class="content-container">
+	        <h2>Requirements</h2>
+	        <ul>
+	            <li><b>Feeding Instructions:</b><span>Clear feeding details.</span></li>
+	            <li><b>Emergency Contact:</b><span>Your contact info.</span></li>
+	            <li><b>Medications:</b><span>Include instructions.</span></li>
+	            <li><b>Comfort Items:</b><span>Familiar toys or blankets.</span></li>
+	        </ul>
+	    </div> <!-- content-container -->
+    </section> <!-- REQUIREMENTS -->
+
+	<section>
+		<a id="pricing" class="anchor"></a>
+    	<div class="content-container">
+    		<!-- Price Table -->
+			<h2>Pricing</h2>
+			<div class="pricing-grid">
+				<div class="cats-col">
+					<h4>Cats:</h4>
+					<p>1</p>
+					<p>2</p>
+					<p>3</p>
+					<p>4+</p>
 				</div>
-			</section>
-			<!-- REQUIREMENTS -->
-            <div class="services-div top-spaced" id="requirements-section">
-                <h2 class="subtitle">What you need:</h2>
-                <ul id="needs-list">
-                    <li>Feeding Instructions: Clear feeding details.</li>
-                    <li>Emergency Contact: Your contact info.</li>
-                    <li>Medications: Include instructions.</li>
-                    <li>Comfort Items: Familiar toys or blankets.</li>
-                </ul>
-            </div>
-			<!-- PRICING -->
-			<section id="pricing-section">
-				<h2 class="subtitle top-spaced">Pricing:</h2>
-				<div class="pricing-grid" id="pricing">
-					<div class="cats-col">
-						<h2 class="grid-title">Cats:</h2>
-						<p>1</p>
-						<p>2</p>
-						<p>3</p>
-						<p>4+</p>
-					</div>
-					<div class="price-col">
-						<h2 class="grid-title">Price per day</h2>
-						<p>P300</p>
-						<p>P450</p>
-						<p>P700</p>
-						<p>P1000</p>
-					</div>
-					<p class="disclaimer">*prices are subject to change</p>
+				<div class="price-col">
+					<h4>Price per day</h4>
+					<p>P300</p>
+					<p>P450</p>
+					<p>P700</p>
+					<p>P1000</p>
 				</div>
-			</section>
-			<br>
-			<!-- QUOTE -->
-            <div class="calculator-container top-spaced" id="quote">
-                <h2 class="title">Generate a quote</h2>
-                <form class="calculator">
-                    <label for="days" class="calc-label">Days: <br><input type="number" min="1" id="days"/></label>
-                    <label for="cats" class="calc-label">Cat/s: <br><input type="number" min="1" id="cats"/></label>
-                    <label for="deposit" class="calc-label">Deposit: <br><input type="number" min="1" id="deposit" required/></label>
+				<p class="disclaimer">*prices are subject to change</p>
+			</div> <!-- pricing-grid -->
+
+			<!-- Calculator -->
+            <div class="calculator-container">
+                <h3>Generate a quote</h3>
+                <form>
+                    <label for="days" class="calc-label">Days: <br><input id="days" type="number" min="1" value="1"></label>
+                    <label for="cats" class="calc-label">Cat/s: <br><input id="cats" type="number" min="1" value="1"></label>
                 </form>
-                <label for="total-fee"><p id="total-fee"></p></label>
+                <div id="total-fee"></div>
                 <div class="btn-container">
                     <button id="calc-btn">Calculate</button>
-                    <button id="clear-btn">Reset</button>
+                    <button id="reset-btn">Reset</button>
                 </div>
-            </div>
-			<br>
-			<!-- CONTACT -->
-			<section id="contact-section" class="contact-section top-spaced">
-				<h2 class="title" id="contact">Contact</h2>
-				<section class="contact-form">
-					<h2 class="subtitle">Send Us An Email &lt;3</h2>
-					<form id="form">
-						<input name="email" id="email" type="email" placeholder="Enter your email address">
-						<p id="email-output"></p>
-						<input id="email-btn" type="button" value="Send Email" class="btn" >
-                	</form>
-            	</section>
-				<div class="socials-div top-spaced">
-					<h2 class="subtitle">Follow us on social media:</h2>
-					<div class="socials">
-						<a href="https://www.facebook.com/profile.php?id=100092916394256&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a href="https://www.instagram.com/maicatsitter" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
-					</div>
-				</div>
-			</section>
-        </div>
-		<!-- MAIN-CONTAINER END -->
-    </div>
-	<!-- PAGE WRAPPER END -->
-	<footer>
-		<div class="footer-container">
-			<div class="footer-content">
-				<p>© 2024 Mai Cat Sitter</p>
-				<p>Designed by <a href="https://github.com/Stefan-Moller134" target="_blank">Stefan D. Moller</a></p>
+            </div> <!-- calculator-container -->
+        </div> <!-- content-container -->
+    </section> <!-- PRICING -->
+
+	<section>
+		<a id="contact" class="anchor"></a>
+    	<div class="content-container">		
+			<h2>Contact</h2>
+			<!-- Call to Action -->
+			<a href="mailto:" class="call-to-action">Send Us An Email &lt;3</a>
+
+			<!-- Socials -->
+			<div class="socials">
+				<h3 class="subtitle">Follow us on social media:</h3>
+				<a href="https://www.facebook.com/profile.php?id=100092916394256&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/maicatsitter" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
 			</div>
+		</div> <!-- content-container -->
+	</section> <!-- CONTACT -->
+
+	<footer>
+		<div class="content-container">
+			<p>© 2024 Mai Cat Sitter</p>
+			<p>Designed by <a href="https://github.com/Stefan-Moller134" target="_blank">Stefan D. Moller</a></p>
 		</div>
 	</footer>
+
     <script src="script.js"></script>
 </body>
 </html>
