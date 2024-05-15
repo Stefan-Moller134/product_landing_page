@@ -27,9 +27,10 @@ html {
   font-style: normal;
 }
 
-.top-spaced {
-  margin-top: 2rem !important;
+body .top-spaced {
+  margin-top: 2rem;
 }
+
 /* NAV */
 #header-img {
   width: 5rem;
@@ -69,6 +70,7 @@ nav > ul > li {
   background-color: var(--background-color3);
   color: var(--background-color2);
 }
+
 /* #PAGE-WRAPPER */
 #page-wrapper {
   position: relative;
@@ -105,6 +107,7 @@ nav > ul > li {
   font-family: arial;
   line-height: 1.5;
 }
+
 /* #MAIN-CONTAINER */  
 .main-container {
   max-width: 1000px;
@@ -191,6 +194,7 @@ input {
   font-size: 0.75rem;
   font-style: italic;
 }
+
 /* #QUOTE*/
 .show-calc-paragraph {
   text-align: center;
@@ -275,8 +279,8 @@ button:hover {
   display: none;
   font-weight: bolder;
 }
-/* CONTACT */
 
+/* CONTACT */
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -286,6 +290,7 @@ button:hover {
   padding: 2rem;
   background-color: var(--background-color1);
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -321,6 +326,7 @@ button:hover {
   width: 2rem;
   height: 2rem;
 }
+
 /* #FOOTER */
 .footer-container {
   display: flex;
@@ -343,6 +349,7 @@ button:hover {
   min-width: 250px;
   width: 100%;
 }
+
 /* MEDIA QUERIES */
 @media (max-width: 600px) {
   header {
@@ -357,12 +364,14 @@ button:hover {
   #nav-bar {
     flex-direction: column;
   }
+
   .nav-link {
     text-decoration: none;
     color: black;
     padding: 1rem;
     display: flex;
   }
+
   #page-wrapper {
     padding: 10rem 2.5rem;
   }
@@ -373,19 +382,23 @@ button:hover {
     position: static;
     flex-direction: column;
   }
+
   nav > ul {
     flex-direction: column;
     align-items: center;
   }
+
   .nav-link {
     text-decoration: none;
     color: black;
     padding: 1rem;
     display: flex;
   }
+
   .logo {
     display: none;
   }
+
   #page-wrapper {
     padding: 2rem 2.5rem;
   }
