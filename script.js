@@ -37,5 +37,5 @@ function resetForm() {
 
 resetBtn.addEventListener('click', resetForm);
 
-const mailto = 'stefanmoller134_gmail.com';
+const mailto = 'maimaicatsitter.co.za';
 mailToLink.href = 'mailto:' + mailto.replace('_', '@');
